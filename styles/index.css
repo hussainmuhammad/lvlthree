@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    min-height: 100%;
+    font-family: Helvetica, sans-serif;
+    background-image: url("../images/handshake2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*==================================NAV BAR CSS=========================*/
+
+#nav{
+    width:100%;
+    height:80px;
+    background-color: black;
+    border-bottom: 3px solid #CC0000;
+    overflow: hidden;
+}
+#logo{
+    float:left;
+    margin-left:30px;
+    width:120px;
+    height:75px;
+    border-radius: 10px;
+}
+.topBorder{
+    padding-top: :35px;
+    background-color: #CC0000;
+}
+
+/* Link Styling */
+
+#categoryList{
+    padding: 15px;
+    margin-left:20%;
+    line-height: 50px;
+}
+ #categoryList a{
+    padding:0px 10px;
+    text-align: center;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.categories{
+    color:white;
+    text-decoration: none;
+    margin-right:30px;
+    /* list-style-position: inside; */
+}
+
+.dropdown{
+    float: left;
+  overflow: hidden; /*Not sure if this line does anything*/
+}
+
+.ddn-content{
+display: none;
+min-width: 150px;
+z-index: 1;
+position: absolute;
+
+}
+
+.ddn-content a {
+    color: white;
+    padding: 0px 10px;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+}
+.ddn-content a:hover {
+  background-color: #CC0000;
+}
+
+.dropdown:hover .ddn-content {
+  display: block;
+  background-color: black;
+}
+/*==================================BODY CSS=====================================================*/
+
+#title-container{
+    width: 1100px;
+    height: 150px;
+    /* border: 1px solid white; */
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.3); /* Black background with opacity */
+}
+
+#header-title{
+    color: #E0E0E0;
+    text-align: center;
+    font-size: 4em;
+    position: absolute; /*At a later time re-center the title*/
+    bottom: -40px;
+}
